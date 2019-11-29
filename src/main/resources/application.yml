@@ -1,0 +1,13 @@
+server:
+  port: 8003
+spring:
+  jpa:
+    database: mysql
+    show-sql: true
+    generate-ddl: true
+    hibernate.ddl-auto: update
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/vue-user?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123
