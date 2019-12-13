@@ -16,19 +16,20 @@ public class UserController {
         System.out.println("8002访问。。。");
         return userService.findAll(size,page);
     }
-    //修改
+    //查询一个
     @RequestMapping("/findOne")
     public User findOne(@RequestBody User user){
         Integer id = user.getId();
         return  userService.findById(id);
     }
+    //修改
     @RequestMapping("/updateUser")
     public User updateUser(@RequestBody User user){
         return  userService.saveAndFlush(user);
     }
+    //删除
     @RequestMapping(value = "/deleteById",method = RequestMethod.POST)
     public String deleteById(@RequestBody User user){
-
         return  userService.deleteById(user);
     }
 }
