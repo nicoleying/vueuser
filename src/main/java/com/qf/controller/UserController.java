@@ -13,7 +13,7 @@ public class UserController {
     //查询所有
     @RequestMapping("/findAll/{size}/{page}")
     public UserResponse findAll(@PathVariable("size") Integer size, @PathVariable("page") Integer page){
-        System.out.println("8002访问。。。");
+        System.out.println("8002访问。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。");
         return userService.findAll(size,page);
     }
     //查询一个
